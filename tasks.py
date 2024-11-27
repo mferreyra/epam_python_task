@@ -33,7 +33,7 @@ def get_total_cost(costs:dict, items:list, tax:float):
             total_cost += costs[item]  
     total_cost = total_cost + total_cost * tax
 
-    return total_cost
+    return round(total_cost, 2)
 
 
 #costs = {'socks':5, 'shoes':60, 'sweater':30}
