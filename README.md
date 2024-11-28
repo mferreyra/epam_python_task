@@ -49,5 +49,5 @@ outputs: yes
 
 
 ## TODO
-- Unit test -> test more cases
+- ~~Unit test~~
 - Dockerize

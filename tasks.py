@@ -12,18 +12,20 @@ class Dictionary():
     def newentry(self, key:str, value:str):
         self.words[key] = value
 
-    def look(self, key:str):
-        if key in self.words:
+    def look(self, key:str = None):
+        if key is None:
+            return "Please input a key for lookup"
+        elif key in self.words:
             return self.words[key]
         else:
-            return f"Can´t find entry for {key}"
+            return f"Can't find entry for {key}"
 
 
 ##### Task 2 #####
 
 def get_total_cost(costs:dict, items:list, tax:float) -> float:
     """Input: Dictionary of items and their costs, list of items bought, tax.
-        Note: If the item doesn´t exitst in the given cost values, the item is ignored.
+        Note: If the item doesn't exitst in the given cost values, the item is ignored.
         Output: Total costs of the items plus tax, rounded to two decimal places."""
     
     total_cost = 0
