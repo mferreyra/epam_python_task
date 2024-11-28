@@ -19,13 +19,6 @@ class Dictionary():
             return f"Can´t find entry for {key}"
 
 
-#d = Dictionary()
-#d.newentry('Apple', 'A fruit that grows on trees')
-#print(d.look('Apple')) #output: A fruit that grows on trees
-#print(d.look('Banana')) #output: Can´t find entry for Banana
-
-
-
 ##### Task 2 #####
 
 def get_total_cost(costs:dict, items:list, tax:float) -> float:
@@ -42,11 +35,6 @@ def get_total_cost(costs:dict, items:list, tax:float) -> float:
     return round(total_cost, 2)
 
 
-#costs = {'socks':5, 'shoes':60, 'sweater':30}
-#print(get_total_cost(costs, ['socks', 'shoes', 'asdf'], 0.09))
-
-
-
 ##### Task 3 #####
 
 def word_from_list(words:list) -> str:
@@ -58,7 +46,3 @@ def word_from_list(words:list) -> str:
         new_word += words[index][index]
     
     return new_word
-
-
-#my_list = ["yoda", "best", "has"]
-#print(word_from_list(my_list))
