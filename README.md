@@ -50,5 +50,5 @@ outputs: yes
 
 ## TODO
 - ~~Unit test~~
-- Dockerize
+- ~~Dockerize~~
 - CI/CD
